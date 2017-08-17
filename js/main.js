@@ -1,7 +1,6 @@
 
-  var con=document.getElementById("contain");
+  document.getElementById("contain").onclick=echo;
   setInterval("echo()",5000);
-  con.onclick=echo;
   function echo(){
     alert("Welcome To My Web Page"); 
   }
