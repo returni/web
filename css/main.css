@@ -1,11 +1,14 @@
 *{
   margin:0px;
   padding:0px;
-  cursor:url("../favicon.ico"),auto;
+}
+body{
+  width:100%;
+  height:100%;
+  cursor:url("https://returni.github.io/web/favicon.ico"),auto;
 }
 #contain{
   width:500px;
   height:209px;
   margin:0px auto;
-  cursor:pointer;
 }
