@@ -3,7 +3,7 @@
   padding:0px;
   cursor:url("https://returni.github.io/web/favicon.ico"),auto;
 }
-#contain{
+#contain,#img{
   width:500px;
   margin:0px auto;
 }
