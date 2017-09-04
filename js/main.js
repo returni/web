@@ -1,5 +1,5 @@
 window.onload=function(){
-  document.getElementById("contain").onclick=echo;
+  document.getElementById("img").onclick=echo;
 }
   //setInterval("echo()",20000);
   function echo(){
