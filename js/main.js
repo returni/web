@@ -4,7 +4,7 @@ window.onload=function(){
 	audio[0].play();
 	setTimeout(function(){
 		if(audio[0].paused){audio[1].play()};
-	},3000);
+	},420000);
 }
 	function welcome(){
 		alert("Welcome To My Web Page"); 
