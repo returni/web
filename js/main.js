@@ -1,12 +1,9 @@
 window.onload=function(){
-  var video=document.getElementsByTagName("video");
-  //setInterval(autoplay(video[0]),2000);
-  setInterval(autoplay(video[1]),5000);
-  document.getElementById("img").onclick=welcome;
+	var audio=document.getElementsByTagName("audio");
+	document.getElementById("img").onclick=welcome;
+	audio[0].play();
+	(audio[0].paused)?(audio[1].play()):(audio[0].play());
 }
-  function welcome(){
-    alert("Welcome To My Web Page"); 
-  }
-  function autoplay(obj){
-    obj.setAttribute("autoplay","autoplay");
-  }
+	function welcome(){
+		alert("Welcome To My Web Page"); 
+	}
