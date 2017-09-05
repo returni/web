@@ -1,8 +1,7 @@
 window.onload=function(){
   document.getElementById("img").onclick=welcome;  
-  var video=document.getElementsByTagName("video");
-  alert(video.length);
-  //setTimeout("autoplay(video)",420000);
+  var video=document.getElementsByTagName("video")[1];
+  setTimeout("autoplay(video)",420000);
 }
   //setInterval("echo()",20000);
   function welcome(){
