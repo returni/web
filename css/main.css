@@ -1,13 +1,16 @@
 *{
-  margin:0px;
-  padding:0px;
-  cursor:url("https://returni.github.io/web/favicon.ico"),auto;
+	margin:0px;
+	padding:0px;
+	cursor:url("https://returni.github.io/web/favicon.ico"),auto;
 }
 #contain,#img{
-  width:500px;
-  margin:0px auto;
+	width:500px;
+	margin:0px auto;
 }
 #contain #music{
-  width:300px;
-  margin:0px auto;
+	width:300px;
+	margin:0px auto;
+}
+#contain #music audio{
+	padding:150px 0px 0px 0px;
 }
