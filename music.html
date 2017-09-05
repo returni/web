@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music</title>
+<link rel="short icon" href="https://returni.github.io/web/favicon.ico">
+<style>
+*{
+	margin:0px;
+	padding:0px;
+	cursor:url("https://returni.github.io/web/favicon.ico"),auto;
+}
+body{
+	background:white;
+}
+#contain{
+	width:300px;
+	margin:0px auto;
+}
+#contain #music{
+	width:300px;
+	margin:0px auto;
+}
+#contain #music audio{
+	padding:118px 0px 0px 0px;
+}
+
+</style>
+</head>
+<body>
+<div id="contain">
+	<div id="music">
+		<audio controls="controls" name="media">
+			<source src="http://fdfs.xmcdn.com/group3/M01/A4/88/wKgDslK6fyrwzHQDADK2_SMmeyo265.mp3" type="audio/mpeg">
+		</audio>
+		<audio controls="controls" name="media">
+			<source src="http://fdfs.xmcdn.com/group3/M09/43/BF/wKgDsVMdHxqRfcjRAF0Nd3BH1X4026.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+</div>
+<script>
+var music=document.getElementsByTagName("audio");
+music[0].play();
+setTimeout(function(){(music[0].paused)?(music[1].play()):(music[1].pause());},420000);
+</script>
+</body>
+</html>
