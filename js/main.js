@@ -8,5 +8,5 @@ window.onload=function(){
     alert("Welcome To My Web Page"); 
   }
   function autoplay(obj){
-    obj.createAttribute("autoplay","autoplay");
+    obj.setAttribute("autoplay","autoplay");
   }
