@@ -2,7 +2,7 @@ window.onload=function(){
   document.getElementById("img").onclick=welcome;  
   var video=document.getElementsByTagName("video")[0];
   //setTimeout("autoplay(video)",420000);
-  alert(video.getAttribute);
+  alert(video.getAttribute("autoplay"));
 }
   //setInterval("echo()",20000);
   function welcome(){
