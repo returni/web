@@ -50,7 +50,7 @@
 <div id="main">
 	<div id="box">
 		<span>可以将文件拖放到这里</span>
-		<!--<p>共<em>0</em> 张图片</p>-->
+		<p>共<em>0</em> 张图片</p>
 	</div>
 	<div id="bin">回收站</div>
 </div>
@@ -59,9 +59,10 @@ var box=document.getElementById("box");
 var bin=document.getElementById("bin");
 var span=box.getElementsByTagName("span")[0];
 var p=box.getElementsByTagName("p")[0];
-//var em=document.getElementsByTagName("em")[0];
+var em=document.getElementsByTagName("em")[0];
 var imgs=document.getElementsByTagName("img");
 var num=1;
+em.style.display="none";
 box.ondragenter=function(e){
 	var e=e||window.event;
 	e.preventDefault();
@@ -121,13 +122,13 @@ box.ondrop=function(e){
 				
 			}
 			
-			//em.innerHTML=num++;
+			em.innerHTML=num++;
 			
 		}else{
 			if(img[i].type.indexOf("image")!=0){
-				//alert("Error");
+				alert("Error");
 			}else{
-				//em.innerHTML=25;
+				em.innerHTML=25;
 				alert("OverFlow");
 			}
 		}
