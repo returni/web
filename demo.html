@@ -62,7 +62,7 @@ var p=box.getElementsByTagName("p")[0];
 var em=document.getElementsByTagName("em")[0];
 var imgs=document.getElementsByTagName("img");
 var num=1;
-em.style.display="none";
+p.style.display="none";
 box.ondragenter=function(e){
 	var e=e||window.event;
 	e.preventDefault();
@@ -81,7 +81,7 @@ box.ondrop=function(e){
 	var img=e.dataTransfer.files;
 	console.log(img);
 	
-	//var num=1;
+	var num=1;
 	for(var i=0;i<img.length;i++){
 		
 		if(img[i].type.indexOf("image")==0&&num<=25){
