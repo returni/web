@@ -62,8 +62,8 @@ var p=box.getElementsByTagName("p")[0];
 var em=document.getElementsByTagName("em")[0];
 var imgs=document.getElementsByTagName("img");
 var num=1;
+
 p.style.display="none";
-bin.style.zIndex=1;
 
 box.ondragenter=function(e){
 	var e=e||window.event;
@@ -83,7 +83,7 @@ box.ondrop=function(e){
 	var img=e.dataTransfer.files;
 	console.log(img);
 	
-	var num=1;
+	//var num=1;
 	for(var i=0;i<img.length;i++){
 		
 		if(img[i].type.indexOf("image")==0&&num<=25){
@@ -128,7 +128,7 @@ box.ondrop=function(e){
 			
 		}else{
 			if(img[i].type.indexOf("image")!=0){
-				alert("Error");
+				//alert("Error");
 			}else{
 				em.innerHTML=25;
 				alert("OverFlow");
